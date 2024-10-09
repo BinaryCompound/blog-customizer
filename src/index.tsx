@@ -14,14 +14,14 @@ const root = createRoot(domNode);
 
 const App = () => {
 
-	  //состояние для хранения параметров статьи
-	  const [articleOptions, setArticleOptions] = useState<ArticleStateType>(defaultArticleState);
+    //состояние для хранения параметров статьи
+    const [articleOptions, setArticleOptions] = useState<ArticleStateType>(defaultArticleState);
 
-	  // функция для обновления опций
-	  const setAppOptions = (value: ArticleStateType) => {
-		  setArticleOptions(value);
-	  };
-	  return (
+    // функция для обновления опций
+    const setAppOptions = (value: ArticleStateType) => {
+        setArticleOptions(value);
+    };
+    return (
         <div
             className={clsx(styles.main)}
             style={
@@ -40,7 +40,7 @@ const App = () => {
 };
 
 root.render(
-	<StrictMode>
-		<App />
-	</StrictMode>
+    <StrictMode>
+        <App />
+    </StrictMode>
 );
